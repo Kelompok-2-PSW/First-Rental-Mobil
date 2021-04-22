@@ -10,7 +10,7 @@
         <h4 class="color:grey">Selamat Datang di First Rental Mobil Kami</h4>
         </marquee><br><br>
         <h1 class="text-center" class="mt-4" id>First Rental Mobil<h1>
-        <img src="image/gbr1.jpg">
+        <img src="image/gbr1.jpg" width="1130px" height="700px">
         <h2><small>
             First Rental Mobil merupakan sebuah aplikasi berbasis web mengenai sewa mobil.<br>
             Dengan menggunakan aplikasi berbasis web ini, Anda dapat dengan mudah melakukan pemesanan maupun melihat
