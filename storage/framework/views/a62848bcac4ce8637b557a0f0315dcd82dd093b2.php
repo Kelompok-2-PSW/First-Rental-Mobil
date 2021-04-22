@@ -1,0 +1,1 @@
+<?php /**PATH C:\xampp\htdocs\project1\resources\views/logout.blade.php ENDPATH**/ ?>
