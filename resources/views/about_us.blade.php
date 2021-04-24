@@ -65,37 +65,38 @@
     </style>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary mb-3">
-      <a class="navbar-brand">First Rental Mobil</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="/">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/car">Car</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="/rent" tabindex="-1" aria-disabled="true">Rent</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about us" tabindex="-1" aria-disabled="true">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/keluar" tabindex="-1" aria-disabled="true">Log Out</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+  <nav class="navbar navbar-expand-lg bg-dark mb-3 text-white">
+    <h2 id="judul">First Rental Mobil</h2>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="/" id="select">Home |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/car">Car |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about us" tabindex="-1" aria-disabled="true">About Us |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/login" tabindex="-1" aria-disabled="true">Login |</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/keluar" tabindex="-1" aria-disabled="true">Log Out </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 <img src="aboutuscar.jpeg">
     <div class="inner-container">
         <h1>About Us</h1>
         <p class="text">
-        First Rental Adalah Perusahaan Rental Mobil Dengan Harga Terjangakau Dan Armada Baru Yang Siap Mengantarkan Perjalanan Anda Menjadi Lebih Nyaman Dan Berkesan. Kami Berkomitmen Untuk Menyajikan Pelayanan Terbaik Dengan Menyiapkan Kendaraan Yang Bisa Diandalkan Baik Dari Aspek Performa Maupun Estetika. Didukung Oleh Staf Pelayanan Pelanggan Yang Siap Menjawab Pertanyaan Dan Memberikan Solusi Terbaik Untuk Anda. 
+        First Rental adalah Perusahaan Rental Mobil dengan harga terjangakau dan armada baru yang siap mengantarkan perjalanan anda menjadi lebih nyaman dan berkesan.
+         Kami berkomitmen untuk menyajikan pelayanan terbaik dengan menyiapkan kendaraan yang bisa diandalkan baik dari sspek performa maupun estetika.
+         Didukung oleh Staf Pelayanan Pelanggan yang siap menjawab pertanyaan dan memberikan solusi terbaik untuk Anda.
         </p>
         <div class="sosialmedia">
             <p>Instagram<br>@firstrental</p><br>
