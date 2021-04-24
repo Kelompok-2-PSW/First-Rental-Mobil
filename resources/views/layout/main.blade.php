@@ -45,7 +45,7 @@
         <a class="nav-link" href="/car" id="select">Car |</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/about us" tabindex="-1" aria-disabled="true" id="select">About Us |</a>
+        <a class="nav-link" href="/about" tabindex="-1" aria-disabled="true" id="select">About Us |</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="/rent" tabindex="-1" aria-disabled="true" id="select">Login |</a>
