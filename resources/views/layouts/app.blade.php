@@ -15,6 +15,9 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -30,7 +33,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav ms-auto">
 
                     </ul>
 
@@ -51,10 +54,13 @@
                             @endif
                         @else
                         <li class="nav-item ">
-                            <a class="nav-link active tetxt text-white" aria-current="page" href="/home" >Home |</a>
+                            <a class="nav-link active tetxt text-white" aria-current="page" href="/customer" >Home |</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="/car" >Car |</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="/rent" >Rent |</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="/about" tabindex="-1" aria-disabled="true" >About Us |</a>
@@ -63,33 +69,31 @@
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle text-white" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
-
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                                    <a class="dropdown-item" href="{{url('logout')}}">Logout</a>
                                 </div>
+                    </div>
                             </li>
                         @endguest
                     </ul>
                 </div>
             </div>
         </nav>
-
-        <main class="py-4">
-            @yield('content')
-        </main>
     </div>
-    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+
+    <main class="py-4">
+            @yield('content')
+    </main>
+
+    <div class="text-center p-3" id="foot" style="background-color: rgba(0, 0, 0, 0.2);">
     © 2021 By:
     <a class="text-dark">First_Rental_Mobil.com</a>
   </div>
-
+  <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"
+            crossorigin="anonymous"></script>
 </body>
 </html>
