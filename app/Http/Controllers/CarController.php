@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\car;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 
@@ -14,8 +15,8 @@ class CarController extends Controller
      */
     public function index()
     {
-        $mobil = DB::table('mobil')->get();
-        return view('car.index', ['mobil' => $mobil]);
+        $mobil = car::latest()->paginate(5);
+        return view('customer.car.index')->with('mobil', $mobil);
     }
 
     /**
@@ -25,7 +26,7 @@ class CarController extends Controller
      */
     public function create()
     {
-        //
+       
     }
 
     /**
@@ -36,7 +37,7 @@ class CarController extends Controller
      */
     public function store(Request $request)
     {
-        //
+       
     }
 
     /**
@@ -58,7 +59,7 @@ class CarController extends Controller
      */
     public function edit($id)
     {
-        //
+        
     }
 
     /**
@@ -70,7 +71,7 @@ class CarController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        
     }
 
     /**
@@ -81,7 +82,6 @@ class CarController extends Controller
      */
     public function destroy($id)
     {
-        //
+        
     }
 }
- 
